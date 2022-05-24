@@ -41,10 +41,10 @@ SECCION 1 - INICIO
     display: flex;
     align-items: center;
     justify-content:center;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
-.ul-home a{
+.ul-home-a{
     text-decoration: none;
     font-family: "cute";
     color:rgb(255, 255, 255);
@@ -54,12 +54,28 @@ SECCION 1 - INICIO
     border: 1px solid rgba(255, 255, 255, 0);
 }
 
-.ul-home a:hover{
+.ul-home-a:hover{
     background-color: rgba(255, 255, 255, 0.288);
     color: white;
     padding:5px;
     border-radius:5px;
     border: 1px solid rgba(255, 255, 255, 0.459);
+}
+
+.icon-header{
+    margin-right: 5px;
+    background-color:white;
+    padding:5px 8px;
+    border-radius: 50%;
+}
+
+
+.iconsh{
+    color: #0000FF;
+    width: 10px;
+    display: block;
+    margin: auto;
+    
 }
 
 .home_h1{
@@ -214,7 +230,7 @@ SECCION 4 - PORTAFOLIO
 }
 
 .container_4 h2{
-    color: white;
+    color: #4B7BF5;
     top: 30px;
     width: 100%;
     text-align: left;
@@ -252,6 +268,17 @@ SECCION 4 - PORTAFOLIO
     margin: auto;
 }
 
+.icons-hola{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.i-hola{
+    margin-top:20px;
+}
 
 /*
 SECCION 5 - CLIENTES
@@ -259,18 +286,28 @@ SECCION 5 - CLIENTES
 
 .container_5{
     width: 100%;
-    height: 280px;
+    height: 480px;
     background: #C2E2F5;
     display:flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+@keyframes image-animated {
+	0% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+    100% {
+		transform: scale(1.0);
+	}
+}
+
 .container_5 h2{
     color: white;
-    width: 70%;
-    text-align: center;
+    text-align: left;
     font-size: 1.8rem;
     font-family: "cute";
     color: #4B7BF5;
@@ -291,6 +328,20 @@ SECCION 5 - CLIENTES
     border: 2px solid rgb(0, 189, 31);
 }
 
+.dos-img{
+    width: 80%;
+    margin: auto;
+    display: block;
+    animation: image-animated 8s infinite;
+}
+
+.box-image{
+    width: 30%;
+}
+
+.box-image-dos{
+    width: 45%;
+}
 
 /*
 SECCION 6 - CONTACTO
@@ -351,3 +402,37 @@ footer p{
 
 }
 
+@keyframes wipe-enter {
+	0% {
+		transform: scale(1.0);
+	}
+	100% {
+		transform: scale(1.2);
+	}
+}
+
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.26);
+    animation: wipe-enter 1s infinite;
+}
+
+.whatsapp:hover {
+      transform:scale(1.10);
+}
+  
+.whatsapp-icon {
+    margin-top:13px;
+}
+
+  
