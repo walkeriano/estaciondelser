@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+@font-face{
+    font-family:"cute";
+    src: url(../fonts/owl-Cute.ttf)
+}
 
 /*
 GLOBALES
@@ -14,7 +18,7 @@ GLOBALES
     width: 100%;
     margin: auto;
     overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -25,7 +29,7 @@ SECCION 1 - INICIO
     position: fixed;
     width:100%;
     height:70px;
-    background: linear-gradient(45deg, blue, rgb(8, 0, 117));
+    background-color: #0000FF;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,6 +46,7 @@ SECCION 1 - INICIO
 
 .ul-home a{
     text-decoration: none;
+    font-family: "cute";
     color:rgb(255, 255, 255);
     font-size: 1.0rem;
     margin-right: 20px;
@@ -50,7 +55,7 @@ SECCION 1 - INICIO
 }
 
 .ul-home a:hover{
-    background-color: rgba(255, 255, 255, 0.11);
+    background-color: rgba(255, 255, 255, 0.288);
     color: white;
     padding:5px;
     border-radius:5px;
@@ -58,7 +63,8 @@ SECCION 1 - INICIO
 }
 
 .home_h1{
-    font-size: 1.0rem;
+    font-size: 1.2rem;
+    font-family: "cute";
     color: white;
     font-weight: bold;
     background-color:rgba(255, 255, 255, 0.123);
@@ -70,7 +76,7 @@ SECCION 1 - INICIO
 
 .box-one{
     width:100%;
-    height:80vh;
+    height:90vh;
     background-color:green;
     text-align: center;
 }
@@ -78,14 +84,14 @@ SECCION 1 - INICIO
 
 .figure-img{
     width: 100%;
-    height:80vh;
+    height:90vh;
     object-fit: cover;
 }
 
 .text-home{
     position: absolute;
     width:100%;
-    height:80vh;
+    height:90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,15 +99,18 @@ SECCION 1 - INICIO
 }
 
 .text-home h2{
-    color: white;
-    font-size: 1.5rem;
+    color: #4B7BF5;
+    font-size: 2.2rem;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-family: "cute";
+    line-height: 35px;
 }
 
 .text-home p{
-    color: white;
-    width: 50%;
+    color: #4B7BF5;
+    font-size: 1.2rem;
+    line-height: 25px;
 }
 
 
@@ -112,61 +121,50 @@ SECCION 2 - MY SKILLS
 .container_2{
     width: 100%;
     height: 480px;
-    background: rgb(112, 0, 122);
+    background: #4B7BF5;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.h2-container-2{
-    color: white;
-    width: 100%;
     text-align: center;
-    font-size: 1.8rem;
-    font-weight: bold;
 }
 
-.sec_div{
-    display: flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.icon-check{
-    width: 35px;
-    margin-right: 10px;
-}
-
-.sec_gen{
-    width: 80%;
-    margin-top: 40px;
-}
-
-.sec_cont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content:center;
-}
-
-.sec_cont .sec_div{
-    border: 0px solid white;
-    width: 50%;
-    margin: 10px;
-}
-
-.sec_cont h3{
+.box-preguntas h3{
     color: white;
-    font-size: 1rem;
+    font-family: "cute";
+    margin-top:10px;
 }
+
+
+.box-h3-right-first{
+    font-size:2.8rem;
+    margin-right: 180px;
+}
+
+.box-h3-left-first{
+    font-size:2.8rem;
+    margin-left: 220px;
+}
+
+.box-h3-right{
+    font-size:2.1rem;
+    margin-right: 180px;
+}
+
+.box-h3-left{
+    font-size:2.1rem;
+    margin-left: 220px;
+}
+
 
 .p-cont-2{
-    margin-top:25px;
+    margin-top:30px;
     color: white;
     font-size: 1.2rem;
     text-align: center;
 }
+
+
 
 
 /*
@@ -175,8 +173,8 @@ SECCION 3 - SERVICIOS
 
 .container_3{
     width: 100%;
-    height: 480px;
-    background: rgb(0, 140, 255);
+    height: 350px;
+    background: #4B7BF5;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -188,14 +186,18 @@ SECCION 3 - SERVICIOS
     width: 100%;
     text-align: center;
     font-size: 1.8rem;
+    font-family: "cute";
+    
 }
 
 .container_3 p{
     color: white;
-    margin-top:20px;
+    margin-top:15px;
     width: 70%;
     text-align: center;
     font-size: 1.2rem;
+    font-family: Arial;
+    line-height: 1.2;
 }
 
 
@@ -208,22 +210,47 @@ SECCION 4 - PORTAFOLIO
 .container_4{
     width: 100%;
     height: 480px;
-    background: rgb(21, 177, 0);
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background: #89CFF0;
 }
 
 .container_4 h2{
     color: white;
     top: 30px;
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-size: 1.8rem;
+    font-family: "cute";
+    margin-bottom:10px;
 }
 
+.box-datos{
+    margin-left: 50px;
+}
 
+.box-datos p{
+    color: white;
+    text-align: left;
+    font-size: 1.0rem;
+    font-family: Arial;
+    line-height:25px;
+}
+
+.rendo-pic{
+    display: block;
+    margin: auto;
+    width: 260px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.cont-4{
+    width: 70%;
+    height: 480px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
 
 
 /*
@@ -233,7 +260,7 @@ SECCION 5 - CLIENTES
 .container_5{
     width: 100%;
     height: 280px;
-    background: rgb(255, 0, 0);
+    background: #C2E2F5;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -242,12 +269,27 @@ SECCION 5 - CLIENTES
 
 .container_5 h2{
     color: white;
-    width: 60%;
+    width: 70%;
     text-align: center;
     font-size: 1.8rem;
+    font-family: "cute";
+    color: #4B7BF5;
 }
 
+.button-cont5{
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: rgb(0, 189, 31);
+    border: 2px solid rgb(0, 189, 31);
+    margin-top: 25px;
+    font-weight: bold;
+}
 
+.button-cont5:hover{
+    background-color:rgb(0, 189, 31);
+    color: white;
+    border: 2px solid rgb(0, 189, 31);
+}
 
 
 /*
@@ -256,7 +298,7 @@ SECCION 6 - CONTACTO
 
 .container_6{
     width: 100%;
-    height: 400px;
+    height: 350px;
     background: white;
     display:flex;
     flex-direction: column;
@@ -278,15 +320,12 @@ SECCION 6 - CONTACTO
     padding: 15px 30px;
     background: rgb(0, 60, 165);
     color: white;
-    margin: 15px;
+    margin-top: 25px;
     border-radius: 30px;
     border: 1px solid rgb(0, 60, 165);
 }
 
-.div_button{
-    display: flex;
-    justify-content: center;
-}
+
 
 .button:hover{
     background: white;
@@ -311,3 +350,4 @@ footer p{
     color: rgb(255, 255, 255);
 
 }
+
