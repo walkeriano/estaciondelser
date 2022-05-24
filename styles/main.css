@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+GLOBALES
+*/
+
+
+.body{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+SECCION 1 - INICIO
+*/
+
+.header-home{
+    position: fixed;
+    width:100%;
+    height:70px;
+    background: linear-gradient(45deg, blue, rgb(8, 0, 117));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+
+.ul-home{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-right: 20px;
+}
+
+.ul-home a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 1.0rem;
+    margin-right: 20px;
+    padding:5px;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.ul-home a:hover{
+    background-color: rgba(255, 255, 255, 0.11);
+    color: white;
+    padding:5px;
+    border-radius:5px;
+    border: 1px solid rgba(255, 255, 255, 0.459);
+}
+
+.home_h1{
+    font-size: 1.0rem;
+    color: white;
+    font-weight: bold;
+    background-color:rgba(255, 255, 255, 0.123);
+    padding:10px;
+    border-radius:10px;
+    border: 1px solid white;
+    margin-left: 30px;
+}
+
+.box-one{
+    width:100%;
+    height:80vh;
+    background-color:green;
+    text-align: center;
+}
+
+
+.figure-img{
+    width: 100%;
+    height:80vh;
+    object-fit: cover;
+}
+
+.text-home{
+    position: absolute;
+    width:100%;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-home h2{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.text-home p{
+    color: white;
+    width: 50%;
+}
+
+
+/*
+SECCION 2 - MY SKILLS
+*/
+
+.container_2{
+    width: 100%;
+    height: 480px;
+    background: rgb(112, 0, 122);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2-container-2{
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.sec_div{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.icon-check{
+    width: 35px;
+    margin-right: 10px;
+}
+
+.sec_gen{
+    width: 80%;
+    margin-top: 40px;
+}
+
+.sec_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:center;
+}
+
+.sec_cont .sec_div{
+    border: 0px solid white;
+    width: 50%;
+    margin: 10px;
+}
+
+.sec_cont h3{
+    color: white;
+    font-size: 1rem;
+}
+
+.p-cont-2{
+    margin-top:25px;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+/*
+SECCION 3 - SERVICIOS
+*/
+
+.container_3{
+    width: 100%;
+    height: 480px;
+    background: rgb(0, 140, 255);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_3 h2{
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.container_3 p{
+    color: white;
+    margin-top:20px;
+    width: 70%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+
+/*
+SECCION 4 - PORTAFOLIO
+*/
+
+
+.container_4{
+    width: 100%;
+    height: 480px;
+    background: rgb(21, 177, 0);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_4 h2{
+    color: white;
+    top: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+
+
+/*
+SECCION 5 - CLIENTES
+*/
+
+.container_5{
+    width: 100%;
+    height: 280px;
+    background: rgb(255, 0, 0);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_5 h2{
+    color: white;
+    width: 60%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+
+
+/*
+SECCION 6 - CONTACTO
+*/
+
+.container_6{
+    width: 100%;
+    height: 400px;
+    background: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_6 h2{
+    color: rgb(0, 60, 165);
+    top: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+.button{
+    border: none;
+    padding: 15px 30px;
+    background: rgb(0, 60, 165);
+    color: white;
+    margin: 15px;
+    border-radius: 30px;
+    border: 1px solid rgb(0, 60, 165);
+}
+
+.div_button{
+    display: flex;
+    justify-content: center;
+}
+
+.button:hover{
+    background: white;
+    border: 1px solid rgb(0, 60, 165);
+    color: rgb(0, 60, 165);
+}
+
+/*
+SECCION 7 - FOOTER
+*/
+
+footer div{
+    width: 100%;
+    height: 40px;
+    background: rgb(36, 36, 36);
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    padding: 13px;   
+    color: rgb(255, 255, 255);
+
+}
